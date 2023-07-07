@@ -1,16 +1,15 @@
 
 import './App.css'
 
-import Home from './pages/landingpage/Home'
-
 function App() {
-
+  
 
   return (
     <>
       <div>
-        <Home />
-       </div>
+        <h2>Hello </h2>
+      </div>
+      
     </>
   )
 }
