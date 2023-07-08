@@ -1,0 +1,49 @@
+.chat-window {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    min-height: 160px;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header, .chat-footer {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    height: calc(100% - 200px); /* adjust this as needed, 120px is just an example */
+    overflow-y: auto; /* enables vertical scrolling */
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse; /* newest messages at the bottom */
+}
+
+
+.chat-body::-webkit-scrollbar {
+    width: 8px; /* Adjust width for your preference */
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Adjust color for your preference */
+}
+
+.chat-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Adjust color for your preference */
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

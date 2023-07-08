@@ -1,13 +1,13 @@
 
 import './App.css'
-
+import ChatWidget from './Components/ChatWidget/ChatWidget'
 function App() {
   
 
   return (
     <>
       <div>
-        <h2>Hello </h2>
+        <ChatWidget />
       </div>
       
     </>
